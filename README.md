@@ -1,7 +1,7 @@
 # Script
 
 Payload data to update product quantity and stock status.
-
+<pre>
 {
   "product": {
     "sku": "BLK-MED-G123-GUC-2",
@@ -19,3 +19,4 @@ Payload data to update product quantity and stock status.
     }
   }
 }
+</pre>
