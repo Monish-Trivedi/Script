@@ -48,7 +48,6 @@ class Products
 		$stockItem->setData('qty',$stockData['qty']); //set updated quantity 
 		$stockItem->setData('manage_stock',$stockData['manage_stock']);
 		$stockItem->setData('use_config_notify_stock_qty',1);
-		$stockItem->save(); //save stock of item
-		$product->save(); //  also save product
+		$stockItem->save(); //save stock of item		
     }
 }
