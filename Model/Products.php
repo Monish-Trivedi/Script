@@ -41,9 +41,7 @@ class Products
      * @param array $stockData your updated data
      * @return void 
     */
-    public function updateProductStock($productId,$stockData) {
-        $product=$this->_product->load($productId); //load product which you want to update stock
-		$stockItem=$this->_stockRegistry->getStockItem($item['product_id']); // load stock of that product
+    public function updateProductStock($productId,$stockData) {        
 		$stockItem->setData('is_in_stock',$stockData['is_in_stock']); //set updated data as your requirement
 		$stockItem->setData('qty',$stockData['qty']); //set updated quantity 
 		$stockItem->setData('manage_stock',$stockData['manage_stock']);
