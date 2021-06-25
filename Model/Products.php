@@ -18,8 +18,7 @@ class Products
     protected $_stockRegistry;
 
     /**
-    * @param Magento\Framework\App\Helper\Context $context
-    * @param Magento\Catalog\Model\Product $product
+    * @param Magento\Framework\App\Helper\Context $context    
     * @param Magento\CatalogInventory\Api\StockStateInterface $stockStateInterface,
     * @param Magento\CatalogInventory\Api\StockRegistryInterface $stockRegistry
     */
@@ -27,12 +26,10 @@ class Products
         \Magento\Framework\App\Helper\Context $context,
         \Magento\Catalog\Model\Product $product,
         \Magento\CatalogInventory\Api\StockStateInterface $stockStateInterface,
-        \Magento\CatalogInventory\Api\StockRegistryInterface $stockRegistry, 
-    ) {
-        $this->_product = $product;
+        \Magento\CatalogInventory\Api\StockRegistryInterface $stockRegistry
+    ) {       
         $this->_stockStateInterface = $stockStateInterface;
-        $this->_stockRegistry = $stockRegistry;
-        parent::__construct($context);
+        $this->_stockRegistry = $stockRegistry;        
     }
 
     /**
